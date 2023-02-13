@@ -1,0 +1,399 @@
+:root {
+    --primary-text-color: #212121;
+    --primary-white-color:#ffffff;
+    --title-text-color: #757575;
+    --accent-color: #2196F3;
+    --logo-header: #000000;
+    --background-button: #188CE8;
+    --background-team: #F5F4FA;
+    --background-footer: #2F303A;
+    --contacts-footer-color: rgba(255, 255, 255, 0.6)
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: var(--primary-text-color)
+    background-color: var(--primary-white-color)
+}
+
+
+            /*--utilities*/
+
+.no-margin {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
+                /*--header--*/
+
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+
+.header-container {
+    display: flex;
+    align-items: center;
+    
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    width: 1200px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    text-decoration: none;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+
+.logo-header {
+    color: var(--logo-header);
+}
+
+.header-link {
+    display: flex;
+}
+
+.header-link .item:first-child {
+    margin-left: 93px;
+}
+
+.header-link .item {
+
+}
+
+.header-link .item + .item {
+    margin-left: 50px;
+}
+
+.header-link .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.link {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+    color: var(--accent-color)
+}
+
+.header-contacts {
+    display: flex;
+    margin-left: auto;
+
+}
+
+.header-contacts .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contact-link {
+    display: inline-block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14x;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    color: var(--accent-color)
+}
+
+
+
+                /*--main--*/
+
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    text-align: center;
+    color: var(--primary-white-color);
+    background-color: #2f303a;
+}
+
+
+.hero-text {
+        width: 696px;
+        margin-top: 0px;
+    
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color:var(--primary-white-color);
+}
+
+.hero-button {
+    display: inline-block;
+    min-width: 216px;
+    height: 50px;
+    padding: 10px 32px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;   
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    color: var(--primary-white-color);
+    background-color: var(--accent-color)
+
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--background-button)
+}
+
+
+        /*--about section*/
+
+.about-section {
+
+}
+        
+.about-container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.about-text {
+    display: none;
+    visibility: hidden;
+}
+
+.about-title {
+    display: flex;
+}
+
+.about-title .item {
+    width: 270px;
+}
+
+.about-title .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.subtitle {
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1.14;
+    text-align: start;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+.text {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+
+
+            /*--picture section--*/
+
+
+.picture-section {
+    padding-top: 0;
+}
+
+.picture-container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.picture-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+.picture {
+    display: flex;
+}
+
+.picture .item {
+    display: block;
+}
+
+.picture .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.item .img {
+    display: block;
+}
+
+            /*--team section--*/
+
+
+
+
+.team-section {
+    background-color: var(--background-team)
+}
+
+.team-container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.team-title {
+    margin-top: 0;
+    
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+.team-cards {
+    display: flex;
+    background-color: var(--secondary-text-color);
+}
+
+.team-cards .item {
+    width: 270px;
+    height: 368px;
+    background-color: var(--primary-white-color);
+}
+
+.team-cards .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.item .team-name {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+ .team-name {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+ }
+
+.team-job {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+     color: var(--title-text-color);
+}
+
+
+
+        /*--footer--*/
+
+
+
+.page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    background-color: var(--background-footer)
+}
+
+.footer-container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.logo-footer {
+    color: var(--primary-white-color);
+}
+
+.address-list {
+    margin-top: 20px;
+}
+
+.footer-list .item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer-address {
+    font-style: normal;
+    text-decoration: none;
+    color: var(--primary-white-color);
+}
+
+.footer-contacts {
+    font-style: normal;
+    text-decoration: none;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--contacts-footer-color);
+}
+
+.footer-contacts:hover,
+.footer-contacts:focus {
+    color: var(--accent-color);
+}
